@@ -1570,22 +1570,6 @@ vnc_world_of_bits = [
     'wob.mini.VisualAddition-v0',
 ]
 
-# signup forms.
-for _id in range(20):
-    vnc_world_of_bits.append('wob.real.Signup-{}-v0'.format(_id))
-
-for _site in ['Jetblue', 'Kayak', 'AA', 'VirginAmerica',
-               'United',  'Delta',  'Alaska']:
-    vnc_world_of_bits.append('wob.real.BookFlight-{}-v0'.format(_site))
-
-for _site in ['Airfrance', 'Craigslist', 'Chase']:
-    vnc_world_of_bits.append('wob.real.ClickButton-{}-v0'.format(_site))
-
-for _task in ['Learn', 'Test']:
-    for _name in ['Geography', 'Planet', 'Universe', 'Comet', 'Moon', 'Mars', 'Solar-System']:
-        vnc_world_of_bits.append('wob.real.Quizlet-{}-{}-v0'.format(_name, _task))
-
-vnc_world_of_bits.append('wob.real.Duolingo-French-Basic-1-v0')
 
 for game in vnc_world_of_bits:
     register(
